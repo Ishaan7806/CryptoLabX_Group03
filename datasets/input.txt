@@ -1,0 +1,3 @@
+Cryptography is the science of secure communication.
+Git helps developers collaborate efficiently.
+This is Group 03.
