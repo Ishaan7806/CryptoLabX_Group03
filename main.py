@@ -58,7 +58,7 @@ def menu():
 
         elif choice == "4":
             write_log("Analyze")
-            analyze_file("datasets/test1.txt")
+            analyze_file("datasets/text1.txt")
 
         elif choice == "5":
             write_log("Exit")
