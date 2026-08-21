@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
     ciphertext = "AOL XBPJR IYVDU MVE QBTWZ VCLY AOL SHGF KVN"
 
-    dictionary = load_dictionary("../dictionary/english_text.txt")
+    dictionary = load_dictionary("../dictionary/english_words.txt")
 
     key, plaintext, score = dictionary_attack(
         ciphertext,
