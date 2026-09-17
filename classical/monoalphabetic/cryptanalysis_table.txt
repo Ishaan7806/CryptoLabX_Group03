@@ -1,0 +1,262 @@
+CRYPTANALYSIS ITERATION TABLE
+============================================================
+
+Step 1
+Observation: High-frequency ciphertext letter
+Possible Substitution: T -> E
+Substitution Tested: T -> E
+Result: _ ____E____ ____ __ _E__E__ ____, ____ E_E__ _____ __E____E __ _________E_ __ _E ____ ________ _E__E_ ___ ____E__ __ E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 2
+Observation: High-frequency ciphertext letter
+Possible Substitution: Z -> T
+Substitution Tested: Z -> T
+Result: _ ____E____ ___T T_ _E__E_T ____, T__T E_E__ _____ __E_T__E __ ____T_T_TE_ T_ _E T__T ________ _E__ET ___ ___TE__ T_ E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 3
+Observation: High-frequency ciphertext letter
+Possible Substitution: G -> A
+Substitution Tested: G -> A
+Result: _ _A__E____ ___T TA _E__E_T __A_, T__T E_E__ _____ __E_T__E __ _A__T_T_TE_ TA _E T__T __A_A___ _E__ET ___ ___TE__ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 4
+Observation: High-frequency ciphertext letter
+Possible Substitution: Q -> O
+Substitution Tested: Q -> O
+Result: O _A__E____ _O_T TA _E__E_T __A_, T_OT E_E__ ___O_ __EOT__E __ _A__T_T_TE_ TA _E T_OT __A_A___ _E__ET O__ ___TE__ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 5
+Observation: High-frequency ciphertext letter
+Possible Substitution: I -> I
+Substitution Tested: I -> I
+Result: O _A__E____ _O_T TA _E__E_T __A_, TIOT E_E__ I__O_ __EOT__E __ _A__T_T_TE_ TA _E TIOT __A_A___ _E__ET O__ ___TE__ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 6
+Observation: High-frequency ciphertext letter
+Possible Substitution: O -> N
+Substitution Tested: O -> N
+Result: O _A__E____ _O_T TA _E__E_T __A_, TIOT E_E__ I__O_ __EOT__E N_ _A__TNT_TE_ TA _E TIOT __A_A___ _E__ET O__ ___TE__ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 7
+Observation: High-frequency ciphertext letter
+Possible Substitution: F -> S
+Substitution Tested: F -> S
+Result: O _AS_E____ _O_T TA _E__E_T __AS, TIOT E_E__ I__OS __EOT__E N_ _AS_TNT_TE_ TA _E TIOT __A_A_S_ _E__ET OS_ ___TE__ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 8
+Observation: High-frequency ciphertext letter
+Possible Substitution: L -> H
+Substitution Tested: L -> H
+Result: O _AS_E____ _O_T TA _E__E_T __AS, TIOT E_E__ I__OS __EOT__E NH _ASHTNT_TE_ TA _E TIOT __A_A_S_ HE__ET OS_ __HTE__ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 9
+Observation: High-frequency ciphertext letter
+Possible Substitution: K -> R
+Substitution Tested: K -> R
+Result: O _AS_ER___ _O_T TA RE__E_T __AS, TIOT E_ER_ I__OS _REOT_RE NH _ASHTNT_TE_ TA _E TIOT _RA_A_S_ HE_RET OS_ __HTER_ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 10
+Observation: High-frequency ciphertext letter
+Possible Substitution: R -> D
+Substitution Tested: R -> D
+Result: O _ASDER___ _O_T TA RE__E_T __AS, TIOT E_ER_ I__OS _REOT_RE NH _ASHTNT_TED TA _E TIOT _RA_A_SD HE_RET OSD __HTER_ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 11
+Observation: High-frequency ciphertext letter
+Possible Substitution: S -> L
+Substitution Tested: S -> L
+Result: O _ASDER__L _O_T TA RE_LE_T __AS, TIOT E_ER_ I__OS _REOT_RE NH _ASHTNT_TED TA _E TIOT _RA_A_SD HE_RET OSD __HTER_ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 12
+Observation: High-frequency ciphertext letter
+Possible Substitution: E -> C
+Substitution Tested: E -> C
+Result: O _ASDER__L _OCT TA RE_LECT __AS, TIOT E_ER_ I__OS CREOT_RE NH CASHTNT_TED TA _E TIOT _RA_A_SD HECRET OSD __HTER_ TA E_E
+Decision: Accepted as frequency candidate
+------------------------------------------------------------
+Step 13
+Observation: Word pattern matched: WT has pattern 01
+Possible Substitution: W -> B
+Substitution Tested: WT -> BE
+Result: O _ASDER__L _OCT TA RE_LECT __AS, TIOT E_ER_ I__OS CREOT_RE NH CASHTNT_TED TA BE TIOT _RA_A_SD HECRET OSD __HTER_ TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 14
+Observation: Word pattern matched: WN has pattern 01
+Possible Substitution: W -> B
+Substitution Tested: WN -> BY
+Result: O _ASDER__L _OCT TA RE_LECT __AS, TIOT E_ERY I__OS CREOT_RE NH CASHTNT_TED TA BE TIOT _RA_A_SD HECRET OSD _YHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 15
+Observation: Word pattern matched: LGDT has pattern 0123
+Possible Substitution: L -> H
+Substitution Tested: LGDT -> HAVE
+Result: O _ASDER__L _OCT TA RE_LECT __AS, TIOT E_ERY I_VOS CREOT_RE NH CASHTNT_TED TA BE TIOT _RA_A_SD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 16
+Observation: Word pattern matched: WXZ has pattern 012
+Possible Substitution: W -> B
+Substitution Tested: WXZ -> BUT
+Result: O _ASDER_UL _OCT TA RE_LECT U_AS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT _RA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 17
+Observation: Word pattern matched: WT has pattern 01
+Possible Substitution: W -> B
+Substitution Tested: WT -> BE
+Result: O _ASDER_UL _OCT TA RE_LECT U_AS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT _RA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 18
+Observation: Word pattern matched: GF has pattern 01
+Possible Substitution: G -> A
+Substitution Tested: GF -> AS
+Result: O _ASDER_UL _OCT TA RE_LECT U_AS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT _RA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 19
+Observation: Word pattern matched: GF has pattern 01
+Possible Substitution: G -> A
+Substitution Tested: GF -> AS
+Result: O _ASDER_UL _OCT TA RE_LECT U_AS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT _RA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 20
+Observation: Word pattern matched: WT has pattern 01
+Possible Substitution: W -> B
+Substitution Tested: WT -> BE
+Result: O _ASDER_UL _OCT TA RE_LECT U_AS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT _RA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 21
+Observation: Word pattern matched: GF has pattern 01
+Possible Substitution: G -> A
+Substitution Tested: GF -> AS
+Result: O _ASDER_UL _OCT TA RE_LECT U_AS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT _RA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 22
+Observation: Word pattern matched: XH has pattern 01
+Possible Substitution: X -> U
+Substitution Tested: XH -> UP
+Result: O _ASDER_UL _OCT TA RE_LECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 23
+Observation: Word pattern matched: WN has pattern 01
+Possible Substitution: W -> B
+Substitution Tested: WN -> BY
+Result: O _ASDER_UL _OCT TA RE_LECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 24
+Observation: Word pattern matched: WXZ has pattern 012
+Possible Substitution: W -> B
+Substitution Tested: WXZ -> BUT
+Result: O _ASDER_UL _OCT TA RE_LECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 25
+Observation: Word pattern matched: VTSS has pattern 0122
+Possible Substitution: V -> W
+Substitution Tested: VTSS -> WELL
+Result: O WASDER_UL _OCT TA RE_LECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 26
+Observation: Word pattern matched: WSQEA has pattern 01234
+Possible Substitution: W -> B
+Substitution Tested: WSQEA -> BLOCK
+Result: O WASDER_UL _OCT TA RE_LECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRA_AUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 27
+Observation: Word pattern matched: YQK has pattern 012
+Possible Substitution: Y -> F
+Substitution Tested: YQK -> FOR
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 28
+Observation: Word pattern matched: GF has pattern 01
+Possible Substitution: G -> A
+Substitution Tested: GF -> AS
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 29
+Observation: Word pattern matched: GF has pattern 01
+Possible Substitution: G -> A
+Substitution Tested: GF -> AS
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 30
+Observation: Word pattern matched: WSQEA has pattern 01234
+Possible Substitution: W -> B
+Substitution Tested: WSQEA -> BLOCK
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 31
+Observation: Word pattern matched: WN has pattern 01
+Possible Substitution: W -> B
+Substitution Tested: WN -> BY
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted
+------------------------------------------------------------
+Step 32
+Observation: Remaining unmapped letters completed by frequency order
+Possible Substitution: U -> M
+Substitution Tested: U -> M
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT E_ERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA E_E
+Decision: Accepted as completion
+------------------------------------------------------------
+Step 33
+Observation: Remaining unmapped letters completed by frequency order
+Possible Substitution: C -> G
+Substitution Tested: C -> G
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT EGERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA EGE
+Decision: Accepted as completion
+------------------------------------------------------------
+Step 34
+Observation: Remaining unmapped letters completed by frequency order
+Possible Substitution: B -> J
+Substitution Tested: B -> J
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT EGERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA EGE
+Decision: Accepted as completion
+------------------------------------------------------------
+Step 35
+Observation: Remaining unmapped letters completed by frequency order
+Possible Substitution: P -> X
+Substitution Tested: P -> X
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT EGERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA EGE
+Decision: Accepted as completion
+------------------------------------------------------------
+Step 36
+Observation: Remaining unmapped letters completed by frequency order
+Possible Substitution: J -> Q
+Substitution Tested: J -> Q
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT EGERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA EGE
+Decision: Accepted as completion
+------------------------------------------------------------
+Step 37
+Observation: Remaining unmapped letters completed by frequency order
+Possible Substitution: M -> Z
+Substitution Tested: M -> Z
+Result: O WASDERFUL FOCT TA REFLECT UPAS, TIOT EGERY IUVOS CREOTURE NH CASHTNTUTED TA BE TIOT PRAFAUSD HECRET OSD VYHTERY TA EGE
+Decision: Accepted as completion
+------------------------------------------------------------
