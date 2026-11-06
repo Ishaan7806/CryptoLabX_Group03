@@ -1,0 +1,13 @@
+Generator,Serial Correlation,Chi-square statistic,Chi-square p-value,Monobit p-value,Runs test p-value
+Linux /dev/urandom,8.609113967342254e-06,,,,
+OpenSSL rand,0.000817947583494457,,,,
+Windows CNG,-0.001479461296322809,,,,
+Linux /dev/urandom,,238.0361328125,0.7699902568514068,,
+OpenSSL rand,,244.59375,0.6691584631450629,,
+Windows CNG,,250.21044921875,0.5729363801545676,,
+Linux /dev/urandom,,,,0.9719065213929363,
+OpenSSL rand,,,,0.7681023546946556,
+Windows CNG,,,,0.06956644826627979,
+Linux /dev/urandom,,,,,0.45455193199252486
+OpenSSL rand,,,,,0.8868588305263224
+Windows CNG,,,,,0.6033941442528727
