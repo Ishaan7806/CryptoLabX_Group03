@@ -26,11 +26,12 @@ CryptoLabX/
 ├── README.md
 └── requirements.txt
 
-## Current Features
+## Current Modules
 
-- Menu-driven interface
-- File analysis
-- Logging
-- Dataset management
-
-## Future Modules
+- Shift Cipher
+- Brute Force Attack
+- Dictionary Attack
+- Chi-Square Analysis
+- Vigenère Cipher Cryptanalysis
+- Kasiski Examination
+- Frequency Analysis
